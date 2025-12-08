@@ -1,0 +1,100 @@
+<resources>
+    <string-array name="data_name">
+        <item>Asus ROG Zephyrus G14</item>
+        <item>Razer Blade 15</item>
+        <item>Dell XPS 13</item>
+        <item>MacBook Pro 16</item>
+        <item>HP Spectre x360</item>
+        <item>Lenovo Legion 5 Pro</item>
+        <item>Acer Swift 3</item>
+        <item>Microsoft Surface Laptop 4</item>
+        <item>Samsung Galaxy Book Pro</item>
+        <item>LG Gram 17</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>Laptop gaming bertenaga dengan CPU AMD Ryzen dan GPU NVIDIA GeForce RTX.</item>
+        <item>Laptop gaming ramping dengan layar refresh rate tinggi dan sasis aluminium.</item>
+        <item>Ultrabook premium dengan layar InfinityEdge yang memukau dan bodi yang ringkas.</item>
+        <item>Laptop bertenaga untuk para profesional kreatif dengan layar Retina yang brilian dan chip Apple M1 Pro/Max.</item>
+        <item>Laptop konvertibel 2-in-1 dengan desain permata dan fitur keamanan yang kuat.</item>
+        <item>Laptop gaming dengan layar QHD 165Hz dan performa yang luar biasa.</item>
+        <item>Laptop tipis dan ringan dengan harga terjangkau dan masa pakai baterai yang baik.</item>
+        <item>Laptop ultra-portabel dengan keyboard yang nyaman dan layar PixelSense yang indah.</item>
+        <item>Laptop AMOLED yang sangat tipis dan ringan dengan integrasi ekosistem Samsung.</item>
+        <item>Laptop 17 inci yang sangat ringan dengan masa pakai baterai yang lama.</item>
+    </string-array>
+    <array name="data_photo">
+        <item>@drawable/asus_rog_zephyrus_g14</item>
+        <item>@drawable/razer_blade_15</item>
+        <item>@drawable/dell_xps_13</item>
+        <item>@drawable/macbook_pro_16</item>
+        <item>@drawable/hp_spectre_x360</item>
+        <item>@drawable/lenovo_legion_5_pro</item>
+        <item>@drawable/acer_swift_3</item>
+        <item>@drawable/microsoft_surface_laptop_5</item>
+        <item>@drawable/samsung_galaxy_book_pro</item>
+        <item>@drawable/lg_gram_17</item>
+    </array>
+
+    <!-- Spesifikasi Detail -->
+    <string-array name="data_spec_processor">
+        <item>AMD Ryzen 9 5900HS</item>
+        <item>Intel Core i7-11800H</item>
+        <item>Intel Core i7-1165G7</item>
+        <item>Apple M1 Pro</item>
+        <item>Intel Core i7-1165G7</item>
+        <item>AMD Ryzen 7 5800H</item>
+        <item>AMD Ryzen 7 5700U</item>
+        <item>AMD Ryzen 7 4980U</item>
+        <item>Intel Core i7-1165G7</item>
+        <item>Intel Core i7-1165G7</item>
+    </string-array>
+    <string-array name="data_spec_ram">
+        <item>16GB DDR4</item>
+        <item>16GB DDR4</item>
+        <item>16GB LPDDR4x</item>
+        <item>16GB Unified Memory</item>
+        <item>16GB DDR4</item>
+        <item>16GB DDR4</item>
+        <item>8GB LPDDR4X</item>
+        <item>16GB LPDDR4x</item>
+        <item>16GB LPDDR4x</item>
+        <item>16GB LPDDR4x</item>
+    </string-array>
+    <string-array name="data_spec_gpu">
+        <item>NVIDIA GeForce RTX 3060</item>
+        <item>NVIDIA GeForce RTX 3070</item>
+        <item>Intel Iris Xe Graphics</item>
+        <item>Apple M1 Pro 16-core GPU</item>
+        <item>Intel Iris Xe Graphics</item>
+        <item>NVIDIA GeForce RTX 3070</item>
+        <item>AMD Radeon Graphics</item>
+        <item>AMD Radeon Graphics</item>
+        <item>Intel Iris Xe Graphics</item>
+        <item>Intel Iris Xe Graphics</item>
+    </string-array>
+    <string-array name="data_spec_storage">
+        <item>1TB M.2 NVMe PCIe 3.0 SSD</item>
+        <item>1TB PCIe Gen4 NVMe SSD</item>
+        <item>512GB M.2 PCIe NVMe SSD</item>
+        <item>512GB SSD</item>
+        <item>512GB PCIe NVMe M.2 SSD</item>
+        <item>1TB M.2 NVMe PCIe SSD</item>
+        <item>512GB NVMe SSD</item>
+        <item>512GB SSD</item>
+        <item>512GB NVMe SSD</item>
+        <item>1TB NVMe SSD</item>
+    </string-array>
+    <string-array name="data_spec_display">
+        <item>14-inch QHD (2560 x 1440) 120Hz</item>
+        <item>15.6-inch QHD (2560 x 1440) 165Hz</item>
+        <item>13.4-inch FHD+ (1920 x 1200) InfinityEdge</item>
+        <item>16.2-inch Liquid Retina XDR display</item>
+        <item>13.5-inch 3K2K (3000 x 2000) OLED</item>
+        <item>16-inch QHD (2560 x 1600) 165Hz</item>
+        <item>14-inch FHD (1920 x 1080) IPS</item>
+        <item>15-inch PixelSense (2496 x 1664)</item>
+        <item>15.6-inch FHD (1920 x 1080) AMOLED</item>
+        <item>17-inch WQXGA (2560 x 1600) IPS</item>
+    </string-array>
+</resources>

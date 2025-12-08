@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Laptop</string>
+    <string name="laptops_name">Nama Laptop</string>
+    <string name="description">Deskripsi</string>
+</resources>

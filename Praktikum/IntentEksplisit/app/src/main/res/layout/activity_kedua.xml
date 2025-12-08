@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ActivityKedua">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Dari Activity Pertama"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView 1 -->
+    <TextView
+        android:id="@+id/univ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Universitas: -----"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView 2 -->
+    <TextView
+        android:id="@+id/fakultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fakultas: -----"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/univ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView 3 -->
+    <TextView
+        android:id="@+id/prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Studi: -----"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/fakultas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView 4 -->
+    <TextView
+        android:id="@+id/matkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mata Kuliah: -----"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/prodi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

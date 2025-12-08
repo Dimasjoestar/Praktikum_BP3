@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Modul5_View" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/my_light_on_primary</item>
+        <item name="colorSecondary">@color/my_light_on_secondary</item>
+    </style>
+
+    <style name="Theme.Modul5_View" parent="Base.Theme.Modul5_View" />
+
+    <style name="CustomEditText"
+        parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:background">@drawable/bg_editteks</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColorHint">#D7B0BEC5</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">50dp</item>">
+    </style>
+
+    <style name="Judul"
+        parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">25dp</item>
+    </style>
+
+    <style name="subJudul"
+        parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:capitalize">sentences</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="newButton"
+        parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_margin">5dp</item>
+
+    </style>
+
+    <style name="CardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">#B3FFFFFF</item> <!-- White with 70% opacity -->
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="android:layout_margin">12dp</item>
+    </style>
+</resources>

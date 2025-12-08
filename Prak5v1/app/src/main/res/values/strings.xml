@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Prak5v1</string>
+    <!-- Added login/register related strings -->
+    <string name="title_login">Halaman Login</string>
+    <string name="title_register">Halaman Daftar</string>
+    <string name="hint_name">Nama</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Konfirmasi Password</string>
+    <string name="btn_login">Masuk</string>
+    <string name="btn_register">Daftar</string>
+    <string name="back_to_login">Sudah punya akun? Masuk</string>
+
+    <!-- Dashboard strings -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="welcome_message">Selamat datang di aplikasi!</string>
+    <string name="welcome_message_with_name">Selamat datang, %1$s!</string>
+    <string name="user_info_title">Informasi Pengguna</string>
+    <string name="label_name">Nama:</string>
+    <string name="label_email">Email:</string>
+    <string name="menu_statistics">Statistik</string>
+    <string name="menu_settings">Pengaturan</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_about">Tentang</string>
+    <string name="btn_logout">Logout</string>
+</resources>
