@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardHabit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_md"
+    android:layout_marginVertical="@dimen/spacing_xs"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardCornerRadius="@dimen/corner_radius_md"
+    app:cardElevation="@dimen/elevation_sm"
+    app:rippleColor="@color/ripple_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/spacing_sm"
+        android:paddingHorizontal="@dimen/spacing_md"
+        android:gravity="center_vertical">
+
+        <!-- Number Badge -->
+        <TextView
+            android:id="@+id/tvHabitNumber"
+            android:layout_width="@dimen/icon_size_md"
+            android:layout_height="@dimen/icon_size_md"
+            android:background="@drawable/bg_icon_circle"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/text_size_caption"
+            android:textStyle="bold" />
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/cbHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_sm"
+            android:buttonTint="@color/primary" />
+
+        <!-- Habit Title -->
+        <TextView
+            android:id="@+id/tvHabitTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Habit title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_body" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

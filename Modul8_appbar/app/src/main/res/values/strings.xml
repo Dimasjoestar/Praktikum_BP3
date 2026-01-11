@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Modul8_appbar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_activity">Ini adalah menu activity</string>
+    <string name="menu_1">Menu 1</string>
+    <string name="menu_2">Menu 2</string>
+    <string name="large_text">
+" Navigasi adalah salah satu aspek penting dalam pengembangan Aplikasi Android,
+dengan navigasi pengalaman pengguna (user experience/UX)  dalam memakai  aplikasi
+yang kita buat akan sangat berpengaruh terhadap kualitas dan kenyamaan pengguna.
+Navigas sendiri mengacu kepada proses memandu pengguna dari satu layar (atau halaman) ke
+layar lain,
+baik itu antar aktivitas (activity) maupun antar fragment.\n"
+"App Bar
+App Bar di Android adalah elemen antarmuka di bagian atas layar yang menampilkan judul,
+tombol navigasi, dan aksi penting, seperti pencarian atau pengaturan.
+Juga sering digunakan sebagai tempat untuk menu tambahan.\n"
+" Toolbar
+Toolbar merupakan komponen yang menggantikan action bar, yang mempunyai kontrol dan
+fleksibilitas tinggi,
+kita dapat dengan mudah memodifikasi tampilan toolbar, yang tentunya masih didukung
+diperangkat lama.
+Perbedaan utama antara Toolbar dan App Bar adalah App Bar: Biasanya digunakan untuk
+menampilkan
+judul dan kontrol navigasi di bagian atas aplikasi. App Bar sering merujuk pada elemen standar
+antarmuka pengguna untuk aplikasi. Sedangkan Toolbar: Merupakan pengganti yang lebih
+fleksibel
+dari Action Bar dan dapat digunakan sebagai App Bar. Toolbar memberikan kontrol lebih besar
+atas
+tampilan dan perilaku elemen di bagian atas layar.
+\n"
+"Navigation Drawer
+Salah satu navigasi populer yang biasa digunakan dalam aplikasi adalah Navigation drawer.
+Navigation drawer adalah sebuah panel yang berada di sisi kiri layar perangkat Android.
+Navigation drawer juga akan muncul ketika pengguna menekan ikon hamburger yang berada
+di sudut kiri panel action bar.
+Navigasi ini  berisi menu-menu utama dalam sebuah aplikasi.\n"
+"Bottom Navigation
+Bottom Navigation adalah navigasi yang letaknya berada dibawah berupa button/icon/label,
+biasanya menampilkan 3 hingga 5 menu dibawahnya"
+</string>
+</resources>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Modul7</string>
+    <string name="nama_kampus">Nama Kampus</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="sejarah_kampus">Sejarah Kampus</string>
+    <string-array name="data_kampus">
+        <item>Universitas Indonesia</item>
+        <item>Universitas Terbuka</item>
+        <item>Universitas Pendidikan Indonesia</item>
+        <item>Universitas Negeri Jakarta</item>
+        <item>Universitas Negeri Yogyakarta</item>
+        <item>Universitas Padjadjaran</item>
+        <item>Universitas Diponegoro</item>
+        <item>Universitas Gadjah Mada</item>
+        <item>Institut Teknologi Bandung</item>
+        <item>Institut Pertanian Bogor</item>
+    </string-array>
+    <string-array name="data_lokasi">
+        <item>Depok, Indonesia</item>
+        <item>Banten, Indonesia</item>
+        <item>Bandung, Indonesia</item>
+        <item>Jakarta, Indonesia</item>
+        <item>Yogyakarta, Indonesia</item>
+        <item>Bandung, Indonesia</item>
+        <item>Semarang, Indonesia</item>
+        <item>Yogyakarta, Indonesia</item>
+        <item>Bandung, Indonesia</item>
+        <item>Bogor, Indonesia</item>
+    </string-array>
+    <string-array name="sejarah_kampus">
+        <item>Universitas Indonesia: Didirikan pada tahun 1849, Universitas Indonesia (UI) adalah salah satu universitas tertua di Indonesia. Berawal sebagai sekolah kedokteran, UI berkembang menjadi universitas dengan berbagai fakultas dan disiplin ilmu, menjadi pusat pendidikan dan penelitian di Indonesia.</item>
+        <item>Universitas Terbuka: Universitas Terbuka (UT) didirikan pada tahun 1984 dengan menyelenggarakan pendidikan tinggi kepada seluruh masyarakat Indonesia melalui sistem pembelajaran jarak jauh. UT adalah universitas negeri yang menawarkan fleksibilitas belajar bagi mereka yang tidak dapat mengikuti pendidikan formal secara konvensional.</item>
+        <item>Universitas Pendidikan Indonesia: Universitas Pendidikan Indonesia (UPI) didirikan pada tahun 1954 sebagai Institut Pendidikan Guru (IPG). UPI kemudian berkembang menjadi universitas negeri yang fokus pada pendidikan dan pengajaran, dengan tujuan utama mencetak tenaga pendidik yang berkualitas di Indonesia.</item>
+        <item>Universitas Negeri Jakarta: Universitas Negeri Jakarta (UNJ) aslinya didirikan pada tahun 1964 sebagai Institut Keguruan dan Ilmu Pendidikan (IKIP) Jakarta. Pada tahun 1999, IKIP Jakarta berubah menjadi UNJ, memperluas cakupan bidang akademiknya dan menjadi salah satu universitas terkemuka di Indonesia.</item>
+        <item>Universitas Negeri Yogyakarta: Universitas Negeri Yogyakarta (UNY) didirikan pada tahun 1964 sebagai Institut Keguruan dan Ilmu Pendidikan Yogyakarta (IKIP Yogyakarta). Pada tahun 1999, IKIP Yogyakarta berubah menjadi UNY, yang kini menawarkan berbagai program studi selain pendidikan, termasuk sains dan teknologi.</item>
+        <item>Universitas Padjadjaran: Universitas Padjadjaran (UNPAD) didirikan pada tahun 1957 di Bandung, Jawa Barat. UNPAD didirikan untuk memenuhi kebutuhan pendidikan tinggi di Jawa Barat dan kini menjadi salah satu universitas terkemuka di Indonesia, terkenal dalam bidang kedokteran, hukum, dan ekonomi.</item>
+        <item>Universitas Diponegoro: Universitas Diponegoro (UNDIP) didirikan pada tahun 1956 di Semarang, Jawa Tengah. Berawal sebagai universitas swasta, UNDIP kemudian dinasionalkan sebagai universitas negeri pada tahun 1961. UNDIP dikenal sebagai salah satu universitas terkemuka di bidang teknik, kedokteran, dan ilmu sosial.</item>
+        <item>Universitas Gadjah Mada: Universitas Gadjah Mada (UGM) didirikan pada tahun 1949 di Yogyakarta dan merupakan universitas negeri pertama yang didirikan oleh pemerintah Indonesia setelah kemerdekaan. UGM adalah salah satu universitas terbesar dan paling bergengsi di Indonesia, dengan beragam program studi dan riset yang diakui secara nasional dan internasional.</item>
+        <item>Institut Teknologi Bandung: Institut Teknologi Bandung (ITB) didirikan pada tahun 1920 sebagai Technische Hoogeschool te Bandoeng, sebuah sekolah tinggi teknik pertama di Hindia Belanda. ITB menjadi salah satu institusi pendidikan teknik terkemuka di Asia Tenggara, dikenal dengan program-programnya dalam bidang teknik, sains, dan seni rupa.</item>
+        <item>Institut Pertanian Bogor: Institut Pertanian Bogor (IPB) didirikan pada tahun 1963 setelah memisahkan diri dari Universitas Indonesia. IPB adalah universitas yang berfokus pada ilmu pertanian dan biologi, dengan kontribusi signifikan dalam penelitian dan pengembangan sektor pertanian di Indonesia.</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/universitas_indonesia</item>
+        <item>@drawable/universitas_terbuka</item>
+        <item>@drawable/universitas_pendidikan_indonesia</item>
+        <item>@drawable/universitas_negeri_jakarta</item>
+        <item>@drawable/universitas_negeri_yogyakarta</item>
+        <item>@drawable/universitas_padjadjaran</item>
+        <item>@drawable/universitas_diponegoro</item>
+        <item>@drawable/universitas_gadjah_mada</item>
+        <item>@drawable/institut_teknologi_bandung</item>
+        <item>@drawable/institut_pertanian_bogor</item>
+    </integer-array>
+</resources>

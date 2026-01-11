@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M60,60m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0"/>
+    <!-- Inner Circle -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M60,60m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0"/>
+    <!-- Leaf 1 -->
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M60,25 Q75,40 60,60 Q45,40 60,25"/>
+    <!-- Leaf 2 -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M35,50 Q50,55 60,60 Q50,75 35,50"/>
+    <!-- Leaf 3 -->
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M85,50 Q70,55 60,60 Q70,75 85,50"/>
+    <!-- Center -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M60,60m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0"/>
+</vector>

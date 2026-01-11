@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcoLifeHub"
+        tools:targetApi="31">
+
+        <!-- ============================================= -->
+        <!-- AUTHENTICATION ACTIVITIES -->
+        <!-- ============================================= -->
+        
+        <!-- 1. Splash Activity - Launcher -->
+        <activity
+            android:name=".activities.auth.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.EcoLifeHub.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. Login Activity -->
+        <activity
+            android:name=".activities.auth.LoginActivity"
+            android:exported="false" />
+
+        <!-- 3. Register Activity -->
+        <activity
+            android:name=".activities.auth.RegisterActivity"
+            android:exported="false" />
+
+        <!-- ============================================= -->
+        <!-- MAIN MENU ACTIVITIES -->
+        <!-- ============================================= -->
+
+        <!-- 4. Home Activity -->
+        <activity
+            android:name=".activities.main.HomeActivity"
+            android:exported="false" />
+
+        <!-- 5. Profile Activity -->
+        <activity
+            android:name=".activities.main.ProfileActivity"
+            android:exported="false" />
+
+        <!-- 6. About Activity -->
+        <activity
+            android:name=".activities.main.AboutActivity"
+            android:exported="false" />
+
+        <!-- 7. Settings Activity -->
+        <activity
+            android:name=".activities.main.SettingsActivity"
+            android:exported="false" />
+
+        <!-- ============================================= -->
+        <!-- WASTE EDUCATION ACTIVITIES -->
+        <!-- ============================================= -->
+
+        <!-- 8. Waste Category Activity -->
+        <activity
+            android:name=".activities.waste.WasteCategoryActivity"
+            android:exported="false" />
+
+        <!-- 9. Plastic Waste Activity -->
+        <activity
+            android:name=".activities.waste.PlasticWasteActivity"
+            android:exported="false" />
+
+        <!-- 10. Organic Waste Activity -->
+        <activity
+            android:name=".activities.waste.OrganicWasteActivity"
+            android:exported="false" />
+
+        <!-- 11. Electronic Waste Activity -->
+        <activity
+            android:name=".activities.waste.ElectronicWasteActivity"
+            android:exported="false" />
+
+        <!-- 12. Paper Waste Activity -->
+        <activity
+            android:name=".activities.waste.PaperWasteActivity"
+            android:exported="false" />
+
+        <!-- 13. B3 Waste Activity -->
+        <activity
+            android:name=".activities.waste.B3WasteActivity"
+            android:exported="false" />
+
+        <!-- ============================================= -->
+        <!-- LIFESTYLE ACTIVITIES -->
+        <!-- ============================================= -->
+
+        <!-- 14. Green Tips Activity -->
+        <activity
+            android:name=".activities.lifestyle.GreenTipsActivity"
+            android:exported="false" />
+
+        <!-- 15. Eco Challenge Activity -->
+        <activity
+            android:name=".activities.lifestyle.EcoChallengeActivity"
+            android:exported="false" />
+
+        <!-- 16. Challenge Detail Activity -->
+        <activity
+            android:name=".activities.lifestyle.ChallengeDetailActivity"
+            android:exported="false" />
+
+        <!-- 17. Daily Habit Activity -->
+        <activity
+            android:name=".activities.lifestyle.DailyHabitActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
