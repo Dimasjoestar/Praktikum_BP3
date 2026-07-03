@@ -96,6 +96,31 @@
             android:name=".activities.waste.B3WasteActivity"
             android:exported="false" />
 
+        <!-- 14. Glass Waste Activity -->
+        <activity
+            android:name=".activities.waste.GlassWasteActivity"
+            android:exported="false" />
+
+        <!-- 15. Textile Waste Activity -->
+        <activity
+            android:name=".activities.waste.TextileWasteActivity"
+            android:exported="false" />
+
+        <!-- 16. Metal Waste Activity -->
+        <activity
+            android:name=".activities.waste.MetalWasteActivity"
+            android:exported="false" />
+
+        <!-- 17. Medical Waste Activity -->
+        <activity
+            android:name=".activities.waste.MedicalWasteActivity"
+            android:exported="false" />
+
+        <!-- 18. Construction Waste Activity -->
+        <activity
+            android:name=".activities.waste.ConstructionWasteActivity"
+            android:exported="false" />
+
         <!-- ============================================= -->
         <!-- LIFESTYLE ACTIVITIES -->
         <!-- ============================================= -->

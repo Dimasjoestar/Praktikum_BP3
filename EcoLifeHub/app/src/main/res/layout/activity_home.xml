@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Top Row with Logo -->
+        <!-- Top Row with Logo and Profile -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,6 +41,15 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_size_title"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/icon_size_md"
+                android:layout_height="@dimen/icon_size_md"
+                android:src="@drawable/ic_profile"
+                android:background="@drawable/bg_icon_circle"
+                android:padding="8dp"
+                android:contentDescription="Profile" />
 
         </LinearLayout>
 

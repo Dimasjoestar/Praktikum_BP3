@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EcoLife Hub</string>
+    
+    <!-- Authentication -->
+    <string name="welcome_back">Selamat Datang Kembali</string>
+    <string name="login_subtitle">Masuk untuk melanjutkan perjalanan hijau Anda</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="create_account">Buat Akun Baru</string>
+    <string name="register_subtitle">Bergabunglah dengan komunitas EcoLife</string>
+    <string name="already_have_account">Sudah punya akun? Masuk</string>
+    <string name="dont_have_account">Belum punya akun? Daftar</string>
+    
+    <!-- Home -->
+    <string name="welcome_user">Selamat Datang, %s!</string>
+    <string name="explore_menu">Jelajahi Menu</string>
+    
+    <!-- Menu Items -->
+    <string name="menu_waste_education">Edukasi Limbah</string>
+    <string name="menu_waste_education_desc">Pelajari tentang berbagai jenis limbah</string>
+    <string name="menu_green_lifestyle">Gaya Hidup Hijau</string>
+    <string name="menu_green_lifestyle_desc">Tips hidup ramah lingkungan</string>
+    <string name="menu_eco_challenge">Eco Challenge</string>
+    <string name="menu_eco_challenge_desc">Tantangan untuk bumi yang lebih baik</string>
+    <string name="menu_daily_habit">Kebiasaan Harian</string>
+    <string name="menu_daily_habit_desc">Checklist aktivitas eco-friendly</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_profile_desc">Lihat dan kelola profil Anda</string>
+    <string name="menu_about">Tentang Aplikasi</string>
+    <string name="menu_about_desc">Informasi tentang EcoLife Hub</string>
+    
+    <!-- Profile -->
+    <string name="profile_title">Profil Saya</string>
+    <string name="settings">Pengaturan</string>
+    
+    <!-- About -->
+    <string name="about_title">Tentang Aplikasi</string>
+    <string name="developer_name">Developer Name</string>
+    <string name="developer_email">developer@email.com</string>
+    <string name="app_version">Versi 1.0</string>
+    <string name="app_description">EcoLife Hub adalah aplikasi yang membantu Anda menjalani gaya hidup ramah lingkungan. Pelajari tentang pengelolaan limbah, ikuti tantangan eco-friendly, dan jadilah bagian dari perubahan positif untuk bumi kita.</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="notifications">Notifikasi</string>
+    <string name="language">Bahasa</string>
+    
+    <!-- Waste Categories -->
+    <string name="waste_category_title">Kategori Limbah</string>
+    <string name="plastic_waste">Limbah Plastik</string>
+    <string name="organic_waste">Limbah Organik</string>
+    <string name="electronic_waste">Limbah Elektronik</string>
+    <string name="paper_waste">Limbah Kertas</string>
+    <string name="b3_waste">Limbah B3</string>
+    
+    <!-- Waste Detail Labels -->
+    <string name="description">Deskripsi</string>
+    <string name="environmental_impact">Dampak Lingkungan</string>
+    <string name="management_tips">Tips Pengelolaan</string>
+    
+    <!-- Green Tips -->
+    <string name="green_tips_title">Tips Hidup Hijau</string>
+    
+    <!-- Eco Challenge -->
+    <string name="eco_challenge_title">Eco Challenge</string>
+    <string name="challenge_detail_title">Detail Tantangan</string>
+    <string name="benefit">Manfaat</string>
+    <string name="difficulty">Tingkat Kesulitan</string>
+    <string name="start_challenge">Mulai Tantangan</string>
+    
+    <!-- Daily Habit -->
+    <string name="daily_habit_title">Kebiasaan Harian</string>
+    <string name="daily_checklist">Checklist Hari Ini</string>
+    
+    <!-- Common -->
+    <string name="back">Kembali</string>
+    <string name="save">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="error_empty_field">Field tidak boleh kosong</string>
+</resources>

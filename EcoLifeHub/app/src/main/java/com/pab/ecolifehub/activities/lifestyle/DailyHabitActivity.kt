@@ -14,6 +14,7 @@ import com.pab.ecolifehub.R
 import com.pab.ecolifehub.adapters.DailyHabitAdapter
 import com.pab.ecolifehub.data.DataSource
 import com.pab.ecolifehub.models.DailyHabit
+import com.pab.ecolifehub.utils.PreferencesHelper
 
 class DailyHabitActivity : AppCompatActivity() {
 
@@ -53,7 +54,15 @@ class DailyHabitActivity : AppCompatActivity() {
         habits.clear()
         habits.addAll(DataSource.getDailyHabits())
 
+        // Load saved habit status from SharedPreferences
+        val completedHabits = PreferencesHelper.getCompletedHabitsToday(this)
+        habits.forEach { habit ->
+            habit.isCompleted = completedHabits.contains(habit.id)
+        }
+
         dailyHabitAdapter = DailyHabitAdapter(habits) { habit, isChecked ->
+            // Save habit status to SharedPreferences
+            PreferencesHelper.saveHabitStatus(this, habit.id, isChecked)
             updateProgress()
         }
 
@@ -78,3 +87,4 @@ class DailyHabitActivity : AppCompatActivity() {
         }
     }
 }
+

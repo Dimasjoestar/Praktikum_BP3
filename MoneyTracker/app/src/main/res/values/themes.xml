@@ -1,6 +1,42 @@
-<resources>
-    <!-- Base application theme. -->
-    <style name="Theme.MoneyTracker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.MoneyTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+        
+        <!-- Modern rounded corners for inputs -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MoneyTracker.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MoneyTracker.Medium</item>
+    </style>
+
+    <style name="Theme.MoneyTracker" parent="Base.Theme.MoneyTracker" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.MoneyTracker.Splash" parent="Theme.MoneyTracker">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Circle Image Style -->
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Shape appearances for modern look -->
+    <style name="ShapeAppearance.MoneyTracker.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MoneyTracker.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
     </style>
 </resources>

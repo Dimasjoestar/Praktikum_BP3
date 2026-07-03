@@ -2,4 +2,28 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorPrimaryLight">#42A5F5</color>
+    <color name="colorPrimaryVariant">#0D47A1</color>
+
+    <!-- Transaction Colors -->
+    <color name="colorIncome">#4CAF50</color>
+    <color name="colorIncomeLight">#E8F5E9</color>
+    <color name="colorExpense">#F44336</color>
+    <color name="colorExpenseLight">#FFEBEE</color>
+
+    <!-- Background Colors (Light Mode) -->
+    <color name="colorBackground">#F8F9FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceVariant">#F1F3F4</color>
+    <color name="colorOnSurface">#1F1F1F</color>
+    <color name="colorOnSurfaceSecondary">#5F6368</color>
+
+    <!-- Card and Ripple -->
+    <color name="colorCard">#FFFFFF</color>
+    <color name="colorRipple">#1A1976D2</color>
+    <color name="colorDivider">#E0E0E0</color>
 </resources>

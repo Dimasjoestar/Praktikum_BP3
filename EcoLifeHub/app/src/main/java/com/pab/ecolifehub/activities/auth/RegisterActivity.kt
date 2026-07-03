@@ -11,6 +11,7 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.pab.ecolifehub.R
 import com.pab.ecolifehub.activities.main.HomeActivity
+import com.pab.ecolifehub.database.DatabaseHelper
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -19,6 +20,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var etPassword: TextInputEditText
     private lateinit var btnRegister: MaterialButton
     private lateinit var btnLogin: MaterialButton
+    private lateinit var databaseHelper: DatabaseHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +33,7 @@ class RegisterActivity : AppCompatActivity() {
             insets
         }
 
+        databaseHelper = DatabaseHelper(this)
         initViews()
         setupListeners()
     }
@@ -50,7 +53,7 @@ class RegisterActivity : AppCompatActivity() {
             val password = etPassword.text.toString().trim()
 
             if (validateInput(username, email, password)) {
-                navigateToHome(username, email)
+                registerUser(username, email, password)
             }
         }
 
@@ -86,9 +89,33 @@ class RegisterActivity : AppCompatActivity() {
         return true
     }
 
-    private fun navigateToHome(username: String, email: String) {
-        Toast.makeText(this, "Registrasi berhasil!", Toast.LENGTH_SHORT).show()
+    private fun registerUser(username: String, email: String, password: String) {
+        // Check if username already exists
+        if (databaseHelper.isUsernameExists(username)) {
+            Toast.makeText(this, "Username sudah digunakan", Toast.LENGTH_SHORT).show()
+            etUsername.requestFocus()
+            return
+        }
+
+        // Check if email already exists
+        if (databaseHelper.isEmailExists(email)) {
+            Toast.makeText(this, "Email sudah terdaftar", Toast.LENGTH_SHORT).show()
+            etEmail.requestFocus()
+            return
+        }
+
+        // Register user
+        val userId = databaseHelper.registerUser(username, email, password)
         
+        if (userId > 0) {
+            Toast.makeText(this, "Registrasi berhasil! 🎉", Toast.LENGTH_SHORT).show()
+            navigateToHome(username, email)
+        } else {
+            Toast.makeText(this, "Registrasi gagal, coba lagi", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun navigateToHome(username: String, email: String) {
         val intent = Intent(this, HomeActivity::class.java).apply {
             putExtra("EXTRA_USERNAME", username)
             putExtra("EXTRA_EMAIL", email)
@@ -98,3 +125,4 @@ class RegisterActivity : AppCompatActivity() {
         finish()
     }
 }
+

@@ -1,3 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Money Tracker</string>
+    <string name="app_name">MoneyTracker</string>
+
+    <!-- Splash -->
+    <string name="splash_subtitle">Kelola Keuanganmu dengan Mudah</string>
+
+    <!-- Auth -->
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Konfirmasi Password</string>
+    <string name="first_name">Nama Depan</string>
+    <string name="last_name">Nama Belakang</string>
+    <string name="dont_have_account">Belum punya akun?</string>
+    <string name="already_have_account">Sudah punya akun?</string>
+    <string name="or_continue_with">Atau lanjutkan dengan</string>
+    <string name="sign_in_google">Masuk dengan Google</string>
+    <string name="sign_in_facebook">Masuk dengan Facebook</string>
+
+    <!-- Validation -->
+    <string name="error_empty_email">Email tidak boleh kosong</string>
+    <string name="error_invalid_email">Format email tidak valid</string>
+    <string name="error_empty_password">Password tidak boleh kosong</string>
+    <string name="error_password_length">Password minimal 6 karakter</string>
+    <string name="error_password_mismatch">Password tidak cocok</string>
+    <string name="error_empty_first_name">Nama depan tidak boleh kosong</string>
+    <string name="error_empty_last_name">Nama belakang tidak boleh kosong</string>
+    <string name="error_email_exists">Email sudah terdaftar</string>
+    <string name="error_login_failed">Email atau password salah</string>
+    <string name="success_register">Registrasi berhasil! Silakan login</string>
+
+    <!-- Dashboard -->
+    <string name="total_balance">Total Saldo</string>
+    <string name="currency_format">Rp %s</string>
+    <string name="transaction_history">Riwayat Transaksi</string>
+    <string name="no_transactions">Belum ada transaksi</string>
+    <string name="hidden_amount">••••••</string>
+
+    <!-- Add/Edit Transaction -->
+    <string name="add_transaction">Tambah Transaksi</string>
+    <string name="edit_transaction">Edit Transaksi</string>
+    <string name="title_label">Judul</string>
+    <string name="title_hint">Masukkan judul transaksi</string>
+    <string name="amount_label">Nominal</string>
+    <string name="amount_hint">Masukkan nominal</string>
+    <string name="type_label">Tipe Transaksi</string>
+    <string name="category_label">Kategori</string>
+    <string name="date_label">Tanggal</string>
+    <string name="select_date">Pilih Tanggal</string>
+    <string name="income">Pemasukan</string>
+    <string name="expense">Pengeluaran</string>
+    <string name="save">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="update">Update</string>
+    <string name="delete">Hapus</string>
+
+    <!-- Categories -->
+    <string name="category_food">Makanan &amp; Minuman</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_home">Rumah</string>
+    <string name="category_transport">Transportasi</string>
+    <string name="category_vehicle">Kendaraan</string>
+    <string name="category_investment">Investasi</string>
+    <string name="category_other">Lainnya</string>
+
+    <!-- Validation Transaction -->
+    <string name="error_empty_title">Judul tidak boleh kosong</string>
+    <string name="error_empty_amount">Nominal tidak boleh kosong</string>
+    <string name="error_invalid_amount">Nominal tidak valid</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_profile">Profil</string>
+    <string name="nav_dark_mode">Mode Gelap</string>
+    <string name="nav_hide_nominal">Sembunyikan Nominal</string>
+    <string name="nav_about">Tentang Aplikasi</string>
+    <string name="nav_logout">Keluar</string>
+    <string name="open_nav_drawer">Buka menu navigasi</string>
+    <string name="close_nav_drawer">Tutup menu navigasi</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="update_profile">Perbarui Profil</string>
+    <string name="delete_all_data">Hapus Semua Data</string>
+    <string name="confirm_delete_data">Apakah Anda yakin ingin menghapus semua data Anda? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="confirm_logout">Apakah Anda yakin ingin keluar?</string>
+    <string name="profile_updated">Profil berhasil diperbarui</string>
+    <string name="data_deleted">Semua data telah dihapus</string>
+
+    <!-- About -->
+    <string name="about_title">Tentang Aplikasi</string>
+    <string name="app_description">MoneyTracker adalah aplikasi pencatat keuangan pribadi yang membantu Anda mengelola pemasukan dan pengeluaran dengan mudah.</string>
+    <string name="version_format">Versi %s</string>
+    <string name="developer_label">Pengembang</string>
+    <string name="developer_name">Dimas Nurdiansyah</string>
+    <string name="nim_label">NIM</string>
+    <string name="developer_nim">20230810087</string>
+    <string name="email_label">Email</string>
+    <string name="developer_email">20230810087@uniku.ac.id</string>
+
+    <!-- Transaction Actions -->
+    <string name="confirm_delete_transaction">Apakah Anda yakin ingin menghapus transaksi "%s"?</string>
+    <string name="transaction_deleted">Transaksi dihapus</string>
+    <string name="transaction_added">Transaksi berhasil ditambahkan</string>
+    <string name="transaction_updated">Transaksi berhasil diperbarui</string>
+    <string name="transaction_add_failed">Gagal menambahkan transaksi</string>
+
+    <!-- Content Descriptions -->
+    <string name="add_transaction_fab">Tambah transaksi baru</string>
+    <string name="income_icon">Ikon pemasukan</string>
+    <string name="expense_icon">Ikon pengeluaran</string>
+    <string name="app_logo">Logo aplikasi</string>
+    <string name="user_avatar">Avatar pengguna</string>
 </resources>

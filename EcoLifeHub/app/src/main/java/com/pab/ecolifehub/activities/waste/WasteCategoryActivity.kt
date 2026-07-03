@@ -61,6 +61,11 @@ class WasteCategoryActivity : AppCompatActivity() {
             3 -> Intent(this, ElectronicWasteActivity::class.java)
             4 -> Intent(this, PaperWasteActivity::class.java)
             5 -> Intent(this, B3WasteActivity::class.java)
+            6 -> Intent(this, GlassWasteActivity::class.java)
+            7 -> Intent(this, TextileWasteActivity::class.java)
+            8 -> Intent(this, MetalWasteActivity::class.java)
+            9 -> Intent(this, MedicalWasteActivity::class.java)
+            10 -> Intent(this, ConstructionWasteActivity::class.java)
             else -> return
         }
         startActivity(intent)

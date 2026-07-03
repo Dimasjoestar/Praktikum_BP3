@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.button.MaterialButton
 import com.pab.ecolifehub.R
+import com.pab.ecolifehub.utils.PreferencesHelper
 
 class ChallengeDetailActivity : AppCompatActivity() {
 
@@ -20,6 +21,8 @@ class ChallengeDetailActivity : AppCompatActivity() {
     private lateinit var tvDescription: TextView
     private lateinit var tvBenefit: TextView
     private lateinit var btnStartChallenge: MaterialButton
+
+    private var challengeId: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +37,7 @@ class ChallengeDetailActivity : AppCompatActivity() {
 
         initViews()
         loadChallengeData()
+        updateButtonState()
         setupListeners()
     }
 
@@ -49,6 +53,7 @@ class ChallengeDetailActivity : AppCompatActivity() {
 
     private fun loadChallengeData() {
         // Get data from Intent
+        challengeId = intent.getIntExtra("CHALLENGE_ID", 0)
         val title = intent.getStringExtra("CHALLENGE_TITLE") ?: "Challenge"
         val description = intent.getStringExtra("CHALLENGE_DESCRIPTION") ?: ""
         val benefit = intent.getStringExtra("CHALLENGE_BENEFIT") ?: ""
@@ -71,13 +76,30 @@ class ChallengeDetailActivity : AppCompatActivity() {
         tvDifficulty.setTextColor(difficultyColor)
     }
 
+    private fun updateButtonState() {
+        val isCompleted = PreferencesHelper.isChallengeCompleted(this, challengeId)
+        if (isCompleted) {
+            btnStartChallenge.text = "✅ Sudah Selesai"
+            btnStartChallenge.isEnabled = false
+            btnStartChallenge.alpha = 0.7f
+        } else {
+            btnStartChallenge.text = "Selesaikan Challenge"
+            btnStartChallenge.isEnabled = true
+            btnStartChallenge.alpha = 1.0f
+        }
+    }
+
     private fun setupListeners() {
         ivBack.setOnClickListener {
             finish()
         }
 
         btnStartChallenge.setOnClickListener {
-            Toast.makeText(this, "Tantangan dimulai! 🌱", Toast.LENGTH_SHORT).show()
+            // Mark challenge as completed
+            PreferencesHelper.addCompletedChallenge(this, challengeId)
+            updateButtonState()
+            Toast.makeText(this, "🎉 Selamat! Challenge berhasil diselesaikan!", Toast.LENGTH_SHORT).show()
         }
     }
 }
+

@@ -33,12 +33,6 @@ object DataSource {
         ),
         MenuItem(
             id = 5,
-            title = "Profil",
-            description = "Lihat dan kelola profil Anda",
-            iconResId = R.drawable.ic_profile
-        ),
-        MenuItem(
-            id = 6,
             title = "Tentang Aplikasi",
             description = "Informasi tentang EcoLife Hub",
             iconResId = R.drawable.ic_about
@@ -76,6 +70,36 @@ object DataSource {
             name = "Limbah B3",
             description = "Limbah Bahan Berbahaya dan Beracun yang memerlukan penanganan khusus",
             iconResId = R.drawable.ic_b3
+        ),
+        WasteCategory(
+            id = 6,
+            name = "Limbah Kaca",
+            description = "Sampah berbahan dasar kaca seperti botol, cermin, dan jendela pecah",
+            iconResId = R.drawable.ic_glass
+        ),
+        WasteCategory(
+            id = 7,
+            name = "Limbah Tekstil",
+            description = "Sampah dari bahan kain seperti pakaian bekas, karpet, dan gorden",
+            iconResId = R.drawable.ic_textile
+        ),
+        WasteCategory(
+            id = 8,
+            name = "Limbah Logam",
+            description = "Sampah berbahan logam seperti kaleng, besi tua, dan aluminium",
+            iconResId = R.drawable.ic_metal
+        ),
+        WasteCategory(
+            id = 9,
+            name = "Limbah Medis",
+            description = "Sampah dari fasilitas kesehatan seperti jarum suntik dan obat kadaluarsa",
+            iconResId = R.drawable.ic_medical
+        ),
+        WasteCategory(
+            id = 10,
+            name = "Limbah Konstruksi",
+            description = "Sampah dari aktivitas pembangunan seperti beton, kayu, dan puing",
+            iconResId = R.drawable.ic_construction
         )
     )
 
@@ -184,6 +208,116 @@ object DataSource {
             "Gunakan produk ramah lingkungan sebagai alternatif"
         ),
         imageResId = R.drawable.ic_b3
+    )
+
+    fun getGlassWasteDetail(): WasteDetail = WasteDetail(
+        name = "Limbah Kaca",
+        description = "Limbah kaca adalah sampah berbahan dasar kaca yang berasal dari berbagai produk. " +
+                "Kaca terbuat dari pasir silika dan dapat didaur ulang tanpa kehilangan kualitas. " +
+                "Namun, kaca membutuhkan waktu sangat lama untuk terurai di alam (lebih dari 1 juta tahun). " +
+                "Contoh: botol minuman, cermin, jendela pecah, lampu, dan peralatan makan kaca.",
+        impact = "• Dapat melukai manusia dan hewan jika pecah\n" +
+                "• Membutuhkan waktu sangat lama untuk terurai\n" +
+                "• Produksi kaca baru membutuhkan energi tinggi\n" +
+                "• Mencemari tanah jika tidak dikelola dengan baik\n" +
+                "• Berbahaya bagi satwa liar yang terperangkap",
+        tips = listOf(
+            "Pisahkan kaca berdasarkan warna untuk daur ulang",
+            "Bungkus kaca pecah dengan koran sebelum dibuang",
+            "Gunakan kembali botol kaca untuk wadah penyimpanan",
+            "Serahkan ke bank sampah atau pengepul kaca",
+            "Hindari membuang kaca bersama sampah organik",
+            "Kreasikan kaca bekas menjadi kerajinan tangan"
+        ),
+        imageResId = R.drawable.ic_glass
+    )
+
+    fun getTextileWasteDetail(): WasteDetail = WasteDetail(
+        name = "Limbah Tekstil",
+        description = "Limbah tekstil adalah sampah dari bahan kain dan serat yang mencakup pakaian bekas, " +
+                "karpet, gorden, sprei, dan produk tekstil lainnya. Industri fashion adalah salah satu " +
+                "penyumbang polusi terbesar di dunia. Tekstil sintetis seperti polyester membutuhkan " +
+                "ratusan tahun untuk terurai. Contoh: pakaian rusak, sepatu bekas, tas kain, dan selimut.",
+        impact = "• Menyumbang 10% emisi karbon global\n" +
+                "• Tekstil sintetis melepaskan mikroplastik saat dicuci\n" +
+                "• Pewarna tekstil mencemari sungai dan tanah\n" +
+                "• Menghabiskan lahan TPA yang terbatas\n" +
+                "• Proses produksi membutuhkan banyak air",
+        tips = listOf(
+            "Donasikan pakaian layak pakai ke panti asuhan",
+            "Jual atau tukar pakaian bekas di thrift shop",
+            "Ubah pakaian lama menjadi kain lap atau kerajinan",
+            "Pilih pakaian berkualitas yang tahan lama",
+            "Cuci pakaian dengan air dingin untuk hemat energi",
+            "Belanja fashion secara bijak dan tidak impulsif"
+        ),
+        imageResId = R.drawable.ic_textile
+    )
+
+    fun getMetalWasteDetail(): WasteDetail = WasteDetail(
+        name = "Limbah Logam",
+        description = "Limbah logam adalah sampah berbahan dasar logam yang sangat berharga untuk didaur ulang. " +
+                "Logam dapat didaur ulang berkali-kali tanpa kehilangan kualitas. Daur ulang logam menghemat " +
+                "energi hingga 95% dibanding menambang logam baru. Contoh: kaleng minuman, kaleng makanan, " +
+                "kawat, pipa, besi tua, dan aluminium foil.",
+        impact = "• Menambang logam baru merusak habitat alami\n" +
+                "• Proses penambangan menghasilkan emisi tinggi\n" +
+                "• Logam berat dapat mencemari tanah dan air\n" +
+                "• Membuang logam di TPA membuang sumber daya berharga\n" +
+                "• Proses pembuatan logam baru sangat boros energi",
+        tips = listOf(
+            "Kumpulkan dan jual ke pengepul barang bekas",
+            "Pisahkan logam dari sampah lainnya",
+            "Cuci kaleng bekas sebelum didaur ulang",
+            "Manfaatkan kaleng bekas untuk pot tanaman",
+            "Serahkan ke bank sampah atau drop point",
+            "Pilih produk dengan kemasan logam yang bisa didaur ulang"
+        ),
+        imageResId = R.drawable.ic_metal
+    )
+
+    fun getMedicalWasteDetail(): WasteDetail = WasteDetail(
+        name = "Limbah Medis",
+        description = "Limbah medis adalah sampah yang dihasilkan dari aktivitas pelayanan kesehatan yang " +
+                "bersifat infeksius dan berbahaya. Limbah ini memerlukan penanganan khusus karena dapat " +
+                "menularkan penyakit. Contoh: jarum suntik, perban bekas, botol infus, obat kadaluarsa, " +
+                "sarung tangan medis, dan alat rapid test.",
+        impact = "• Risiko penularan penyakit infeksius tinggi\n" +
+                "• Jarum suntik berbahaya bagi pemulung dan petugas kebersihan\n" +
+                "• Pencemaran lingkungan dan sumber air\n" +
+                "• Resistensi antibiotik dari obat yang dibuang\n" +
+                "• Bahaya radiasi dari limbah radioaktif medis",
+        tips = listOf(
+            "Kembalikan obat kadaluarsa ke apotek atau puskesmas",
+            "Gunakan wadah khusus untuk jarum suntik bekas",
+            "Jangan membuang di tempat sampah rumah tangga",
+            "Pisahkan masker bekas dari sampah lainnya",
+            "Gunting masker sebelum dibuang agar tidak disalahgunakan",
+            "Hubungi dinas kesehatan untuk pembuangan limbah medis"
+        ),
+        imageResId = R.drawable.ic_medical
+    )
+
+    fun getConstructionWasteDetail(): WasteDetail = WasteDetail(
+        name = "Limbah Konstruksi",
+        description = "Limbah konstruksi adalah sampah yang dihasilkan dari aktivitas pembangunan, renovasi, " +
+                "dan pembongkaran bangunan. Limbah ini seringkali bervolume besar dan beragam jenisnya. " +
+                "Sebagian besar material konstruksi sebenarnya bisa didaur ulang atau digunakan kembali. " +
+                "Contoh: beton pecah, batu bata, kayu bekas, keramik, genteng, dan pipa PVC.",
+        impact = "• Memenuhi lahan TPA dengan cepat\n" +
+                "• Debu konstruksi mencemari udara\n" +
+                "• Limbah cat dan pelarut mencemari tanah\n" +
+                "• Material berbahaya seperti asbes mengancam kesehatan\n" +
+                "• Penambangan material baru merusak lingkungan",
+        tips = listOf(
+            "Rencanakan pembangunan untuk meminimalkan limbah",
+            "Gunakan kembali material yang masih layak",
+            "Jual atau donasikan material bekas yang bagus",
+            "Pisahkan material berdasarkan jenisnya",
+            "Gunakan jasa pengelola limbah konstruksi resmi",
+            "Pilih material ramah lingkungan dan tahan lama"
+        ),
+        imageResId = R.drawable.ic_construction
     )
 
     // Green Tips

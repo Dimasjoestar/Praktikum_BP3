@@ -11,6 +11,7 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.pab.ecolifehub.R
 import com.pab.ecolifehub.activities.main.HomeActivity
+import com.pab.ecolifehub.database.DatabaseHelper
 
 class LoginActivity : AppCompatActivity() {
 
@@ -18,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etPassword: TextInputEditText
     private lateinit var btnLogin: MaterialButton
     private lateinit var btnRegister: MaterialButton
+    private lateinit var databaseHelper: DatabaseHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,7 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
+        databaseHelper = DatabaseHelper(this)
         initViews()
         setupListeners()
     }
@@ -47,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
             val password = etPassword.text.toString().trim()
 
             if (validateInput(username, password)) {
-                navigateToHome(username)
+                loginUser(username, password)
             }
         }
 
@@ -74,10 +77,22 @@ class LoginActivity : AppCompatActivity() {
         return true
     }
 
-    private fun navigateToHome(username: String) {
+    private fun loginUser(username: String, password: String) {
+        val user = databaseHelper.loginUser(username, password)
+        
+        if (user != null) {
+            Toast.makeText(this, "Login berhasil! Selamat datang, ${user.username}", Toast.LENGTH_SHORT).show()
+            navigateToHome(user.username, user.email)
+        } else {
+            Toast.makeText(this, "Username atau password salah", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun navigateToHome(username: String, email: String) {
         val intent = Intent(this, HomeActivity::class.java).apply {
             putExtra("EXTRA_USERNAME", username)
-            putExtra("EXTRA_EMAIL", "$username@ecolife.com")
+            putExtra("EXTRA_EMAIL", email)
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
         startActivity(intent)
         finish()
@@ -88,3 +103,4 @@ class LoginActivity : AppCompatActivity() {
         startActivity(intent)
     }
 }
+

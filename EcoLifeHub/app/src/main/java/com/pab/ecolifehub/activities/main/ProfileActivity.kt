@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.pab.ecolifehub.R
+import com.pab.ecolifehub.utils.PreferencesHelper
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -16,6 +17,9 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var ivSettings: ImageView
     private lateinit var tvUsername: TextView
     private lateinit var tvEmail: TextView
+    private lateinit var tvChallengesCount: TextView
+    private lateinit var tvHabitsCount: TextView
+    private lateinit var tvDaysActive: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +34,14 @@ class ProfileActivity : AppCompatActivity() {
 
         initViews()
         loadUserData()
+        loadStats()
         setupListeners()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Refresh stats when returning to this activity
+        loadStats()
     }
 
     private fun initViews() {
@@ -38,6 +49,9 @@ class ProfileActivity : AppCompatActivity() {
         ivSettings = findViewById(R.id.ivSettings)
         tvUsername = findViewById(R.id.tvUsername)
         tvEmail = findViewById(R.id.tvEmail)
+        tvChallengesCount = findViewById(R.id.tvChallengesCount)
+        tvHabitsCount = findViewById(R.id.tvHabitsCount)
+        tvDaysActive = findViewById(R.id.tvDaysActive)
     }
 
     private fun loadUserData() {
@@ -46,6 +60,17 @@ class ProfileActivity : AppCompatActivity() {
 
         tvUsername.text = username
         tvEmail.text = email
+    }
+
+    private fun loadStats() {
+        // Load stats from SharedPreferences
+        val challengesCompleted = PreferencesHelper.getCompletedChallengesCount(this)
+        val habitsCompleted = PreferencesHelper.getTotalHabitsCompleted(this)
+        val daysActive = PreferencesHelper.getDaysActive(this)
+
+        tvChallengesCount.text = challengesCompleted.toString()
+        tvHabitsCount.text = habitsCompleted.toString()
+        tvDaysActive.text = daysActive.toString()
     }
 
     private fun setupListeners() {
@@ -59,3 +84,4 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 }
+

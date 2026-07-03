@@ -1,6 +1,17 @@
-<resources>
-    <!-- Base application theme. -->
-    <style name="Theme.MoneyTracker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark theme -->
+    <style name="Base.Theme.MoneyTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#E1E1E1</item>
+        <item name="android:statusBarColor">#121212</item>
+        <item name="android:navigationBarColor">#121212</item>
+        
+        <!-- Modern rounded corners for inputs -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MoneyTracker.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MoneyTracker.Medium</item>
     </style>
 </resources>
